@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Datos de Usuario -->
+    <include domain="sharedpref" path="user_settings.xml" />
+    <include domain="sharedpref" path="app_settings.xml" />
+    <include domain="sharedpref" path="user_preferences.xml" />
+
+    <!-- Bases de Datos -->
+    <include domain="database" path="user_messages.db" />
+    <include domain="database" path="user_contacts.db" />
+    <include domain="database" path="chat_history.db" />
+    <include domain="database" path="media_metadata.db" />
+
+    <!-- Archivos Multimedia -->
+    <include domain="file" path="media/files/" />
+    <include domain="file" path="media/images/" />
+    <include domain="file" path="media/videos/" />
+    <include domain="file" path="documents/" />
+    <include domain="file" path="downloads/" />
+
+    <!-- Exclusiones -->
+    <!-- Cache y Archivos Temporales -->
+    <exclude domain="cache" />
+    <exclude domain="external_cache" />
+    <exclude domain="file" path="temp/" />
+    <exclude domain="file" path="cache/" />
+    <exclude domain="file" path=".temp/" />
+
+    <!-- Bases de Datos Temporales -->
+    <exclude domain="database" path="temporary_sessions.db" />
+    <exclude domain="database" path="temp_cache.db" />
+    <exclude domain="database" path="analytics.db" />
+
+    <!-- Preferencias Sensibles -->
+    <exclude domain="sharedpref" path="device.xml" />
+    <exclude domain="sharedpref" path="tokens.xml" />
+    <exclude domain="sharedpref" path="sensitive_data.xml" />
+
+    <!-- Metadatos -->
+    <meta-data
+        android:name="backup.transport"
+        android:value="android/transport/full" />
+
+    <!--
+        Última actualización: 2025-01-11 22:03:27
+        Usuario: William8677
+        Versión: 1.0.0
+    -->
+</full-backup-content>

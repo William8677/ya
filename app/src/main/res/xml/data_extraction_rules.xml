@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Configuración para copias de seguridad en la nube -->
+    <cloud-backup>
+        <!-- Datos de la base de datos -->
+        <include domain="database" path="user_messages.db" />
+        <include domain="database" path="user_contacts.db" />
+        <!-- Exclusión de bases de datos temporales y de caché -->
+        <exclude domain="database" path="temporary_sessions.db" />
+        <exclude domain="database" path="cache.db" />
+
+        <!-- Preferencias compartidas -->
+        <include domain="sharedpref" path="user_settings.xml" />
+        <include domain="sharedpref" path="." />
+        <!-- Exclusión de preferencias temporales -->
+        <exclude domain="sharedpref" path="device.xml" />
+        <exclude domain="sharedpref" path="temp_prefs.xml" />
+
+        <!-- Archivos -->
+        <include domain="file" path="media/files/" />
+        <include domain="file" path="documents/" />
+        <!-- Exclusión de directorios temporales y caché -->
+        <exclude domain="file" path="temp/" />
+        <exclude domain="file" path="cache/" />
+
+        <!-- Caché (general y externa) -->
+        <exclude domain="cache" />
+        <exclude domain="external_cache" />
+    </cloud-backup>
+
+    <!-- Configuración para transferencia entre dispositivos -->
+    <device-transfer>
+        <!-- Datos de la base de datos -->
+        <include domain="database" path="user_messages.db" />
+        <include domain="database" path="user_contacts.db" />
+        <!-- Exclusión de bases de datos temporales -->
+        <exclude domain="database" path="temporary_sessions.db" />
+
+        <!-- Preferencias compartidas -->
+        <include domain="sharedpref" path="user_settings.xml" />
+        <include domain="sharedpref" path="." />
+        <!-- Exclusión de preferencias temporales -->
+        <exclude domain="sharedpref" path="device.xml" />
+
+        <!-- Archivos -->
+        <include domain="file" path="media/files/" />
+        <include domain="file" path="documents/" />
+        <!-- Exclusión de directorios temporales y caché -->
+        <exclude domain="file" path="temp/" />
+        <exclude domain="file" path="cache/" />
+
+        <!-- Caché (general y externa) -->
+        <exclude domain="cache" />
+        <exclude domain="external_cache" />
+    </device-transfer>
+
+    <!-- Metadatos -->
+    <meta-data
+        android:name="backup_transport_settings"
+        android:value="default" />
+
+    <!-- Última actualización: 2025-01-16 -->
+    <!-- Autor: William8677 -->
+</data-extraction-rules>
