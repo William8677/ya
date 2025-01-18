@@ -147,6 +147,7 @@ dependencies {
     implementation(libs.androidx.foundation.layout.android)
     implementation(libs.androidx.foundation.layout.android)
     implementation(libs.androidx.foundation.layout.android)
+    implementation(libs.mediation.test.suite)
 
     // Desugaring
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.4")
@@ -290,7 +291,7 @@ dependencies {
     implementation ("com.google.firebase:firebase-inappmessaging-display")
     implementation("androidx.databinding:databinding-runtime:8.8.0")
     implementation("com.jakewharton.timber:timber:5.0.1")
-    implementation (platform("com.google.firebase:firebase-bom:33.7.0"))
+    implementation (platform("com.google.firebase:firebase-bom:33.8.0"))
     implementation ("com.google.android.gms:play-services-auth:21.3.0")
     implementation ("com.google.android.gms:play-services-base:18.5.0")
     implementation ("com.google.android.gms:play-services-ads:23.6.0")
@@ -300,7 +301,7 @@ dependencies {
     implementation ("androidx.compose.material3:material3:1.3.1")
 
     // Hilt
-    implementation ("com.google.dagger:hilt-android:2.53.1")
+    implementation ("com.google.dagger:hilt-android:2.54")
 
     implementation("com.google.android.gms:play-services-basement:18.5.0")
 
@@ -309,6 +310,7 @@ dependencies {
     implementation ("androidx.coordinatorlayout:coordinatorlayout:1.2.0")
     implementation ("com.google.firebase:firebase-analytics")
     implementation ("com.google.firebase:firebase-messaging")
+    implementation ("com.firebaseui:firebase-ui-auth:8.0.0")
 
 
 

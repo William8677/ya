@@ -207,4 +207,9 @@
     <string name="video_call_service_description">Servicio de videollamadas para comunicación en tiempo real</string>
     <string name="compose_shortcut_short_label">Redactar</string>
     <string name="compose_shortcut_long_label">Escribir nuevo mensaje</string>
+
+    <string name="historias">Historias</string>
+    <string name="comunidades">Comunidades</string>
+    <string name="canales">Canales</string>
+    <string name="salas_de_chat">Salas de Chat</string>
 </resources>

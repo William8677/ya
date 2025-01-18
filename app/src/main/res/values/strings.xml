@@ -208,4 +208,10 @@
     <string name="video_call_service_description">Video call service for real-time communication</string>
     <string name="compose_shortcut_short_label">Compose</string>
     <string name="compose_shortcut_long_label">Write new message</string>
+    <string name="salas_de_chat">Salas de chat</string>
+    <string name="canales">Canales</string>
+    <string name="comunidades">Comunidades</string>
+    <string name="historias">Historias</string>
+    <string name="chat">Chat</string>
+
 </resources>
